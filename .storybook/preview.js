@@ -1,12 +1,14 @@
 import React from 'react';
-import { addDecorator, addParameters } from "@storybook/react"
+import { addDecorator, addParameters } from "@storybook/react";
 
 import GlobalStyle from '../src/styles/GlobalStyle';
+import ThemeProvider from "../src/styles/ThemeProvider";
 
-addDecorator(storyFn => (
+addDecorator((storyFn) => (
   <>
     <GlobalStyle/>
-    {storyFn()}
+    <ThemeProvider>{storyFn()}</ThemeProvider>
+        
   </>
 ));
 
@@ -56,6 +58,7 @@ addParameters({
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
+  layout: "fullscreen",
   controls: {
     matchers: {
       color: /(background|color)$/i,
