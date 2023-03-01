@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import BgRoadImage from "../stories/assets/road.jpg"
 import BgCarImage from "../stories/assets/car.jpg"
 import Heading from "./Heading";
+import Button from "./Button";
 
 export default {
   title: "Components/Hero",
@@ -29,10 +30,16 @@ export const withList = () => (
       </h1>
     </Heading>
     <ul>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Aprenda a dirigir com segurança e confiança em nossa auto escola.</li>
+      <li>Nossos instrutores experientes ajudarão você a dominar a arte de dirigir.</li>
+      <li>Obtenha sua licença de condução e liberdade na estrada conosco!</li>
     </ul>
+    <Button 
+      color="primary" 
+      variant="outlined"
+    >
+      Matricule-se agora
+    </Button>
   </Hero>
 )
 
