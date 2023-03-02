@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 
-import { breakAt, BreakpointSizes } from "../../styles/Breakpoints";
+import Container from "components/atoms/Container";
 
 const Root = styled.div`
   color: #fff;
@@ -17,6 +17,7 @@ const Root = styled.div`
 `;
 
 const Content = styled.div`
+  display: inline-block;
   p,
   li {
     font-size: 20px;
@@ -34,19 +35,7 @@ const Content = styled.div`
   }
 `;
 
-const Container = styled.div`
-  width: 100%;
-  padding: 0 8px;
 
-  ${breakAt(BreakpointSizes.sm)} {
-    padding: 0 16px;
-  }
-  ${breakAt(BreakpointSizes.lg)} {
-    max-width: 1140px;
-    padding: 0 16px;
-    margin: 0 auto;
-  }
-`;
 
 const Hero = ({ image, title, children }) => (
   <Root image={image} data-testid="hero">
@@ -58,13 +47,13 @@ const Hero = ({ image, title, children }) => (
 
 Hero.propTypes = {
   image: PropTypes.string,
-  // title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  /* title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]), */
   children: PropTypes.node,
 };
 
-// Hero.defaultProps = { valores padrões
-//   image: "minha imagem"
-//   title: "Meu título",
-// }
+/* Hero.defaultProps = { valores padrões
+   image: "minha imagem"
+   title: "Meu título",
+} */
 
 export default Hero;
