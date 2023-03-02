@@ -19,8 +19,8 @@ exports[`renders with color danger 1`] = `
 }
 
 .c0:hover:enabled {
-  background-color: #d22a00;
-  border-color: #d22a00;
+  background-color: #b22a00;
+  border-color: #b22a00;
 }
 
 <button
