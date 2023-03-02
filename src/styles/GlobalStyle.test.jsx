@@ -1,11 +1,10 @@
-import React from 'react';
-import { render } from 'test-utils';
+import React from "react";
+import { render } from "test-utils";
 
-import GlobalStyle from './GlobalStyle';
+import GlobalStyle from "./GlobalStyle";
 
-it('match snapshot', () => {
+test("match snapshot", () => {
   render(<GlobalStyle />);
 
   expect(document.head).toMatchSnapshot();
 });
-
