@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    padding: 0;
+    padding: 0!important;
   }
 
   h1, h2, h3, h5, h6 {
