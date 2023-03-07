@@ -10,9 +10,55 @@ import Grid from "../atoms/Grid";
 import Feature from "../atoms/Feature";
 import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
+import ProductGrid from "components/organisms/ProductGrid";
 
 import BgCarImage from "assets/car.jpg";
-import CarRoadVideo from "assets/car_road.mp4"
+import CarRoadVideo from "assets/car_road.mp4";
+import Moto_carImage from "assets/moto_car.jpg";
+import CarImage from "assets/carImage.jpg";
+import MotoImage from "assets/motoImage.jpg";
+import TruckImage from "assets/truckImage.jpg";
+import CnhImage from "assets/cnhImage.jpg";
+import AvulsoImage from "assets/avulsaImage.jpg";
+
+const products = [
+  {
+    id: 1,
+    image: Moto_carImage,
+    title: "1ª Habilitação Carro e Moto",
+    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    id: 2,
+    image: CarImage,
+    title: "1ª Habilitação Carro",
+    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    id: 3,
+    image: MotoImage,
+    title: "1ª Habilitação Moto",
+    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    id: 4,
+    image: TruckImage,
+    title: "Mudança de Categoria Caminhão",
+    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    id: 5,
+    image: AvulsoImage,
+    title: "Aulas Avulsas",
+    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+  {
+    id: 6,
+    image: CnhImage,
+    title: "Treinamento para habilitados",
+    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+  },
+];
 
 const Home = () => (
   <>
@@ -58,6 +104,7 @@ const Home = () => (
       <Heading>
         <h2>Conheça nossos serviços</h2>
       </Heading>
+      <ProductGrid products={products} />
     </Section>
     <Section>
       <Grid md={2}>
@@ -65,7 +112,12 @@ const Home = () => (
           <Heading>
             <h2>Auto Escola</h2>
           </Heading>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio mollitia repellat facilis veritatis tempore unde sapiente commodi aspernatur. Tempore ad molestiae, nisi sunt voluptate unde quam eos eligendi id voluptas?</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+            mollitia repellat facilis veritatis tempore unde sapiente commodi
+            aspernatur. Tempore ad molestiae, nisi sunt voluptate unde quam eos
+            eligendi id voluptas?
+          </p>
           <div>
             <Button color="primary">Saiba mais</Button>
           </div>
@@ -80,7 +132,7 @@ const Home = () => (
         <h2>Dúvidas recorrentes</h2>
       </Heading>
     </Section>
-    <Footer/>
+    <Footer />
   </>
 );
 // Home.defaultProps = {};
