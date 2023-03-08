@@ -1,8 +1,8 @@
 module.exports = {
   stories: [
-    "../src/stories/**/*.stories.(js|jsx|ts|tsx|mdx)",
-    "../src/components/**/*.stories.(js|jsx|mdx)",
-    "../src/styles/**/*.stories.(js|jsx|mdx)",
+    "../src/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)",
+    "../src/components/**/*.stories.@(js|jsx|mdx)",
+    "../src/styles/**/*.stories.@(js|jsx|mdx)",
   ],
   addons: [
     "@storybook/addon-links",
@@ -17,10 +17,10 @@ module.exports = {
         configureJSX: true,
       },
     },
-    "@storybook/addon-knobs"
+    "@storybook/addon-knobs",
   ],
-  "framework": "@storybook/react",
-  "core": {
-    "builder": "@storybook/builder-webpack5"
-  }
-}
+  framework: "@storybook/react",
+  core: {
+    builder: "@storybook/builder-webpack5",
+  },
+};

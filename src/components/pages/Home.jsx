@@ -124,7 +124,7 @@ const Home = () => (
           </div>
         </div>
         <div>
-          <video src={CarRoadVideo} width="100%" autoPlay loop />
+          <video src={CarRoadVideo} width="100%" autoPlay loop muted />
         </div>
       </Grid>
     </Section>
@@ -146,6 +146,12 @@ const Home = () => (
           Placeat corrupti exercitationem vitae nulla doloremque.
         </Accordion>
         <Accordion title="Fui multado e agora?">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+          perspiciatis facilis ipsa numquam voluptas voluptatibus quasi saepe
+          possimus, assumenda, impedit laboriosam officia nostrum itaque?
+          Placeat corrupti exercitationem vitae nulla doloremque.
+        </Accordion>
+        <Accordion title="Quanto tempo é necessário para tirar a primeira habilitação?">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
           perspiciatis facilis ipsa numquam voluptas voluptatibus quasi saepe
           possimus, assumenda, impedit laboriosam officia nostrum itaque?
