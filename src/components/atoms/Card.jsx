@@ -11,7 +11,7 @@ const StyledBody = styled.div`
     margin-top: 0;
     min-height: 3.85rem;
     text-transform: uppercase;
-    border-bottom: 1px solid #817e7e33;
+    border-bottom: 1px solid #817e7e33!important;
   }
 `;
 

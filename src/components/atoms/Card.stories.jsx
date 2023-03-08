@@ -31,7 +31,7 @@ export const usage = () => (
   </Section>
 );
 
-export const withMeia = () => (
+export const withMedia = () => (
   <Section inverse>
     <Card>
       <CardMedia image={Moto_carImage} />
