@@ -12,12 +12,11 @@ const Container = styled.div`
   }
   ${breakAt(BreakpointSizes.lg)} {
     max-width: 1140px;
-    padding: 0 16px;
     margin: 0 auto;
   }
 `;
 Container.defaultProps = {
-  children:undefined
+  children: undefined,
 };
 
 Container.propTypes = {
