@@ -111,7 +111,7 @@ const Home = () => (
       <Grid md={2}>
         <div>
           <Heading>
-            <h2>Auto Escola</h2>
+            <h2>Auto Escola &lt; Tag &gt;</h2>
           </Heading>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio

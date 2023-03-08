@@ -1,6 +1,6 @@
 {
-  "short_name": "Auto Escola",
-  "name": "Auto Escola",
+  "short_name": "Auto Escola <Tag>",
+  "name": "Auto Escola <Tag>",
   "icons": [
     {
       "src": "favicon.ico",

@@ -24,7 +24,7 @@ const Root = styled.footer`
     margin-top: 0;
     text-transform: uppercase;
   }
-  p{
+  p {
     margin: 8px 0;
   }
 `;
@@ -37,7 +37,7 @@ const FooterLink = styled.a`
   color: ${(props) => props.theme.colors.primary.main};
   text-decoration: none;
 
-  &:hover{
+  &:hover {
     color: ${(props) => props.theme.colors.primary.dark};
   }
 `;
@@ -48,7 +48,7 @@ const Footer = () => (
       <Grid md={3}>
         <div>
           <Heading>
-            <h6>Auto Escola</h6>
+            <h6>Auto Escola &lt; Tag &gt;</h6>
           </Heading>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
