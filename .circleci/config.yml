@@ -19,7 +19,7 @@ jobs:
       - run: yarn cover
       - codecov/upload:
           file: coverage/*.json
-      -run: yarn chromatic --project-token=84a2a08d25bc
+      - run: yarn chromatic --project-token=${CHROMATIC_TOKEN}
   versioning:
     docker:
       - image: cimg/node:16.10
@@ -28,7 +28,6 @@ jobs:
       - run:
           name: Check package version
           command: node scripts/check-version edmilsondmx projeto_autoescola
-          
 
 workflows:
   ci:
