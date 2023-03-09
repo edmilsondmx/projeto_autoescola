@@ -7,7 +7,7 @@ orbs:
 jobs:
   tests:
     docker:
-      - image: cimg/node:16.10
+      - image: cimg/node:16.10-browsers
     steps:
       - checkout
       - node/install-yarn
@@ -19,8 +19,22 @@ jobs:
       - run: yarn cover
       - codecov/upload:
           file: coverage/*.json
+  versioning:
+    docker:
+      - image: cimg/node:16.10
+    steps:
+      - checkout
+      - run:
+          name: Check package version
+          command: node scripts/check-version edmilsondmx projeto_autoescola
 
 workflows:
   ci:
     jobs:
       - tests
+      - versioning:
+          filters:
+            branches:
+              ignore: master
+            tags:
+              ignore: /.*/
