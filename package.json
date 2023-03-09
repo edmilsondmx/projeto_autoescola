@@ -1,6 +1,6 @@
 {
   "name": "projeto_autoescola",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@storybook/addon-actions": "^6.5.16",
@@ -41,7 +41,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "chromatic --project-token=84a2a08d25bc",
+    "chromatic": "chromatic --exit-zero-on-changes",
     "lint": "eslint src/**/*.jsx"
   },
   "eslintConfig": {
