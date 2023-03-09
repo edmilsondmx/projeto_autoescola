@@ -4,13 +4,17 @@ orbs:
   node: circleci/node@4.7
 
 workflows:
-  jobs:
-    setup:
-      docker:
-        - image: circleci/node:18.15.0-browsers
-      steps:
-        - checkout
-        - node/install:
-            install-yarn: true
-        - run: node --version
-        - run: yarn --version
+  my-workflow:
+    jobs:
+      - my-job
+
+jobs:
+  my-job:
+    docker:
+      - image: circleci/node:18.15.0-browsers
+    steps:
+      - checkout
+      - node/install:
+          install-yarn: true
+      - run: node --version
+      - run: yarn --version
