@@ -2,6 +2,8 @@
 
 ![CircleCI](https://img.shields.io/circleci/build/github/edmilsondmx/projeto_autoescola)
 
+![Codecov](https://img.shields.io/codecov/c/github/edmilsondmx/projeto_autoescola)
+
 Este projeto foi criado com React, utilizando o Styled-Components e a ferramenta StoryBook.
 
 ### Tecnologias & Ferramentas
