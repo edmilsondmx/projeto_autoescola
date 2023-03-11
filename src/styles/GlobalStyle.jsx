@@ -22,6 +22,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0!important;
   }
 
+  a, button{
+    font-family: "Poppins", sans-serif;
+  }
+
   h1, h2, h3, h5, h6 {
     line-height: 1.3;
     font-weight: 700;

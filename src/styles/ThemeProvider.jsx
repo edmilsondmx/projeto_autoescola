@@ -19,6 +19,7 @@ const light = {
       dark: "#b22a00",
       text: "#212121",
     },
+    border: "#0000001f",
   },
 };
 

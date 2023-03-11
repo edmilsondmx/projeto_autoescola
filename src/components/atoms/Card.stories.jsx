@@ -1,16 +1,15 @@
 import React from "react";
 
-import Card, { CardBody, CardMedia } from "./Card";
+import Card, { CardBody, CardMedia, CardMediaDescription } from "./Card";
 import Section from "components/molecules/Section";
 import Heading from "./Heading";
 import Button from "./Button";
 import Moto_carImage from "stories/assets/moto_car.jpg";
 
-
 export default {
   title: "Components/Organisms/Card",
   component: Card,
-  subcomponents: {CardBody, CardMedia}
+  subcomponents: { CardBody, CardMedia, CardMediaDescription },
 };
 
 export const usage = () => (
@@ -46,6 +45,18 @@ export const withMedia = () => (
           </Button>
         </div>
       </CardBody>
+    </Card>
+  </Section>
+);
+
+export const onlyMedia = () => (
+  <Section inverse>
+    <Card>
+      <CardMedia image={Moto_carImage}>
+        <CardMediaDescription>
+          <h5>Descrição da imagem</h5>
+        </CardMediaDescription>
+      </CardMedia>
     </Card>
   </Section>
 );
