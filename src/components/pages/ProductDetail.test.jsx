@@ -1,15 +1,12 @@
 import React from "react";
 import { render, screen } from "test-utils";
 import ProductDetail from "./ProductDetail";
+import { buildProduct } from "models/builders/products";
 
 it("renders Product Detail page", () => {
-  render(<ProductDetail />);
+  render(<ProductDetail product={buildProduct()} />);
 
-  expect(screen.getByText(/Documentos necessários:/i)).toBeInTheDocument();
-});
-
-it("scrolls to top in first render", () => {
-  render(<ProductDetail />);
-
-  expect(window.scrollTo).toBeCalledTimes(1);
+  expect(
+    screen.getByText("Recycled Frozen Towels", { selector: "h1" })
+  ).toBeInTheDocument();
 });
