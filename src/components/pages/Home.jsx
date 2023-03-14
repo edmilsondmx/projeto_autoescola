@@ -1,5 +1,6 @@
 import React from "react";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
+import ProductType from "models/types/ProductType";
 
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -16,53 +17,8 @@ import Accordion, { AccordionGroup } from "components/atoms/Accordion";
 
 import BgCarImage from "assets/car.jpg";
 import CarRoadVideo from "assets/car_road.mp4";
-import Moto_carImage from "assets/moto_car.jpg";
-import CarImage from "assets/carImage.jpg";
-import MotoImage from "assets/motoImage.jpg";
-import TruckImage from "assets/truckImage.jpg";
-import CnhImage from "assets/cnhImage.jpg";
-import AvulsoImage from "assets/avulsaImage.jpg";
 
-const products = [
-  {
-    id: 1,
-    image: Moto_carImage,
-    title: "1ª Habilitação Carro e Moto",
-    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-  },
-  {
-    id: 2,
-    image: CarImage,
-    title: "1ª Habilitação Carro",
-    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-  },
-  {
-    id: 3,
-    image: MotoImage,
-    title: "1ª Habilitação Moto",
-    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-  },
-  {
-    id: 4,
-    image: TruckImage,
-    title: "Mudança de Categoria Caminhão",
-    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-  },
-  {
-    id: 5,
-    image: AvulsoImage,
-    title: "Aulas Avulsas",
-    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-  },
-  {
-    id: 6,
-    image: CnhImage,
-    title: "Treinamento para habilitados",
-    sumary: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-  },
-];
-
-const Home = () => (
+const Home = ({ products }) => (
   <>
     <Hero image={BgCarImage}>
       <Heading>
@@ -172,8 +128,12 @@ const Home = () => (
     <Footer />
   </>
 );
-// Home.defaultProps = {};
+Home.defaultProps = {
+  products: [],
+};
 
-// Home.propTypes = {};
+Home.propTypes = {
+  products: PropTypes.arrayOf(ProductType),
+};
 
 export default Home;

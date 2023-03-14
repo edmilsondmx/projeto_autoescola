@@ -1,7 +1,6 @@
 # Projeto Auto Escola
 
 ![CircleCI](https://img.shields.io/circleci/build/github/edmilsondmx/projeto_autoescola)
-
 ![Codecov](https://img.shields.io/codecov/c/github/edmilsondmx/projeto_autoescola)
 
 Este projeto foi criado com React, utilizando o Styled-Components e a ferramenta StoryBook.
@@ -10,10 +9,12 @@ Este projeto foi criado com React, utilizando o Styled-Components e a ferramenta
 
 <ul>
     <li>React v18.2.0</li>
-    <li>Styled-COmponents</li>
+    <li>Styled-Components</li>
     <li>StoryBook</li>
     <li>Testes Jest</li>
     <li>Chromatic</li>
+    <li>Integração Contínua CircleCI</li>
+    <li>Integração Contínua CodeCov</li>
 </ul>
 
 ### Resultado Final:

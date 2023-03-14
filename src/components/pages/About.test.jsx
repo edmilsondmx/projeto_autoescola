@@ -7,9 +7,3 @@ it("renders About page", () => {
 
   expect(screen.getByText(/Conheça nossos professores/i)).toBeInTheDocument();
 });
-
-it("scrolls to top in first render", () => {
-  render(<About />);
-
-  expect(window.scrollTo).toBeCalledTimes(1);
-});

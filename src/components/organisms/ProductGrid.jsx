@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import ProductType from "models/types/ProductType";
+
 import { Link } from "react-router-dom";
 
 import Grid from "components/atoms/Grid";
@@ -35,7 +37,7 @@ const ProductGrid = ({ products }) => {
                     color="primary"
                     variant="link"
                     as={Link}
-                    to="/servicos"
+                    to={`/servicos/${product.slang}`}
                   >
                     Saiba mais
                   </Button>
@@ -65,14 +67,7 @@ ProductGrid.defaultProps = {
 };
 
 ProductGrid.propTypes = {
-  products: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-      image: PropTypes.string,
-      title: PropTypes.string,
-      sumary: PropTypes.string,
-    })
-  ),
+  products: PropTypes.arrayOf(ProductType),
 };
 
 export default ProductGrid;
