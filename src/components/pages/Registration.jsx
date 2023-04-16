@@ -112,7 +112,7 @@ const Registration = () => {
 
   return (
     <>
-      <Hero image={BgCarImage}>
+      <Hero image={BgCarImage} padding="0px">
         <Heading>
           <h1>Auto Escola &lt; TAG &gt;</h1>
         </Heading>
