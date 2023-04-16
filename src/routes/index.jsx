@@ -5,10 +5,12 @@ import Home from "routes/home";
 import About from "routes/about";
 import ProductDetail from "routes/servicos";
 import Error404 from "routes/error404";
+import Registration from "routes/Registration";
 
 const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Home />} />
+    <Route path="/matricule-se" element={<Registration />} />
     <Route path="/sobre" element={<About />} />
     <Route path="/servicos/:slang" element={<ProductDetail />} />
     <Route path="*" element={<Error404 />} />
