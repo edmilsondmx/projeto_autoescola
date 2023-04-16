@@ -9,6 +9,7 @@ const Root = styled.div`
   padding: 100px 0;
 
   ${(props) => css`
+    padding: ${props.padding};
     background: url(${props.image}), rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
@@ -31,14 +32,12 @@ const Content = styled.div`
 
   li::before {
     content: "\\2713\\0020";
-    color: ${props => props.theme.colors.primary.main};
+    color: ${(props) => props.theme.colors.primary.main};
   }
 `;
 
-
-
-const Hero = ({ image, title, children }) => (
-  <Root image={image} data-testid="hero">
+const Hero = ({ image, title, children, padding }) => (
+  <Root image={image} padding={padding} data-testid="hero">
     <Container>
       <Content>{children}</Content>
     </Container>
