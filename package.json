@@ -1,6 +1,6 @@
 {
   "name": "projeto_autoescola",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "dependencies": {
     "@faker-js/faker": "^7.6.0",

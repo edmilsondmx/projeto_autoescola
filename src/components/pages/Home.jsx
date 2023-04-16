@@ -38,7 +38,7 @@ const Home = ({ products }) => (
         </li>
         <li>Obtenha sua licença de condução e liberdade na estrada conosco!</li>
       </ul>
-      <Button color="primary" variant="outlined">
+      <Button as={Link} to="/matricule-se" color="primary" variant="outlined">
         Matricule-se agora
       </Button>
     </Hero>

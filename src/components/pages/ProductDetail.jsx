@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ProductType from "models/types/ProductType";
 import { FaIdCard, FaHome, FaScroll } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
@@ -99,7 +100,9 @@ const ProductDetail = ({ product }) => (
             animi reprehenderit excepturi.
           </p>
           <CalloutAction>
-            <Button color="primary">Matricular</Button>
+            <Button as={Link} to="/matricule-se" color="primary">
+              Matricular
+            </Button>
           </CalloutAction>
         </CalloutBody>
         <CalloutMedia>
