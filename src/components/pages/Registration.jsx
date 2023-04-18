@@ -8,16 +8,21 @@ import Footer from "components/organisms/Footer";
 import BgCarImage from "assets/car.jpg";
 import Button from "components/atoms/Button";
 import Section from "components/molecules/Section";
+import { BreakpointSizes, breakAt } from "styles/Breakpoints";
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   max-width: 800px;
   margin: 0px auto;
-  padding: 6rem;
+  padding: 0;
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+
+  ${breakAt(BreakpointSizes.md)} {
+    padding: 6rem;
+  }
 `;
 
 const Label = styled.label`
@@ -26,7 +31,13 @@ const Label = styled.label`
   color: #2c3e50;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+
+  ${breakAt(BreakpointSizes.sm)} {
+    flex-direction: row;
+    justify-content: center;
+  }
 `;
 
 const Input = styled.input`
@@ -35,7 +46,7 @@ const Input = styled.input`
   padding: 0.5rem;
   border-radius: 5px;
   border: none;
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   font-size: 1.2rem;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
@@ -48,7 +59,7 @@ const SelectWrapper = styled.select`
   border-radius: 5px;
   border: none;
   font-size: 1.2rem;
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
 `;
